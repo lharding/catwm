@@ -625,7 +625,7 @@ void tile() {
                 // Stack
                 for(c=head->next;c;c=c->next) ++n;
                 for(c=head->next;c;c=c->next) {
-                    XMoveResizeWindow(dis,c->win,master_size,y,sw-master_size-2,(sh/n)-2);
+                    XMoveResizeWindow(dis,c->win,master_size,0,sw-master_size-2,sh);
                     y += sh/n;
                 }
                 break;

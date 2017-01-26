@@ -67,14 +67,14 @@ static struct key keys[] = {
     {  MOD|ShiftMask,   XK_k,                       move_down,      {NULL}},
     {  MOD,             XK_Return,                  swap_master,    {NULL}},
     {  MOD,             XK_space,                   switch_mode,    {NULL}},
-    {  MOD,             XK_c,                       spawn,          {.com = lockcmd}},
-    {  0,               XF86XK_AudioNext,           spawn,          {.com = next}},
-    {  0,               XF86XK_AudioPrev,           spawn,          {.com = prev}},
-    {  0,               XF86XK_AudioPlay,           spawn,          {.com = toggle}},
-    {  0,               XF86XK_AudioLowerVolume,    spawn,          {.com = voldown}},
-    {  0,               XF86XK_AudioRaiseVolume,    spawn,          {.com = volup}},
-    {  MOD,             XK_p,                       spawn,          {.com = dmenucmd}},
-    {  MOD|ShiftMask,   XK_Return,                  spawn,          {.com = urxvtcmd}},
+//    {  MOD,             XK_c,                       spawn,          {.com = lockcmd}},
+//    {  0,               XF86XK_AudioNext,           spawn,          {.com = next}},
+//    {  0,               XF86XK_AudioPrev,           spawn,          {.com = prev}},
+//    {  0,               XF86XK_AudioPlay,           spawn,          {.com = toggle}},
+//    {  0,               XF86XK_AudioLowerVolume,    spawn,          {.com = voldown}},
+//    {  0,               XF86XK_AudioRaiseVolume,    spawn,          {.com = volup}},
+//    {  MOD,             XK_p,                       spawn,          {.com = dmenucmd}},
+//    {  MOD|ShiftMask,   XK_Return,                  spawn,          {.com = urxvtcmd}},
     {  MOD,             XK_Right,                   next_desktop,   {NULL}},
     {  MOD,             XK_Left,                    prev_desktop,   {NULL}},
        DESKTOPCHANGE(   XK_0,                                       0)
@@ -91,4 +91,3 @@ static struct key keys[] = {
 };
 
 #endif
-
